@@ -1,0 +1,1620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bangers&family=Caveat:wght@500&family=Ceviche+One&family=Cinzel&family=Comforter+Brush&family=Courgette&family=Creepster&family=Grechen+Fuemen&family=Licorice&family=Modak&family=Moo+Lah+Lah&family=Nunito+Sans:ital,wght@1,300&family=Pacifico&family=Satisfy&family=Secular+One&family=Sedgwick+Ave&family=Shizuru&family=Sigmar+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bangers&family=Caveat:wght@500&family=Ceviche+One&family=Cinzel&family=Comforter+Brush&family=Courgette&family=Creepster&family=Grechen+Fuemen&family=Licorice&family=Modak&family=Moo+Lah+Lah&family=Nunito+Sans:ital,wght@1,300&family=Pacifico&family=Playball&family=Satisfy&family=Secular+One&family=Sedgwick+Ave&family=Shizuru&family=Sigmar+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bangers&family=Caveat:wght@500&family=Ceviche+One&family=Comforter+Brush&family=Courgette&family=Creepster&family=Grechen+Fuemen&family=Licorice&family=Modak&family=Moo+Lah+Lah&family=Nunito+Sans:ital,wght@1,300&family=Pacifico&family=Satisfy&family=Secular+One&family=Sedgwick+Ave&family=Shizuru&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bangers&family=Caveat:wght@500&family=Ceviche+One&family=Comforter+Brush&family=Courgette&family=Creepster&family=Grechen+Fuemen&family=Licorice&family=Modak&family=Moo+Lah+Lah&family=Nunito+Sans:ital,wght@1,300&family=Pacifico&family=Secular+One&family=Sedgwick+Ave&family=Shizuru&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .container{
+            display:grid;
+            grid-template-columns: 100%;
+            grid-template-rows:100vh 50vh 70vh 70vh 70vh 80vh 70vh 20vh;
+        }
+        .child-1{
+            background-image:url(/galaxyimg/Earth\ wallpaper\ for\ desktop\ hd\ ultra\ 4k\ \(9\).jpg);
+            background-size:cover;
+            background-repeat:none;
+            background-position: top;
+            display:grid;
+            grid-template-columns:10% 70% 10%;
+            grid-template-rows:10%;
+            justify-content: space-between;
+        }
+        .child-1 .bar-1{
+            background-color:transparent;
+        }
+        .child-1 .bar-1 img{
+            width:100%;
+            height:100%;
+            animation:shootingstar 20s infinite;
+        }
+        @keyframes shootingstar{
+        0%{
+            transform:50deg;
+        opacity: 100%;
+        transform:translate(-30px,-20px );
+       }
+       100%{ 
+        opacity:0%;
+        transform:translate(630px,320px);
+
+        }
+    }
+
+
+
+
+
+        .child-1 .bar-2{
+            display:grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .bar-2 i{
+            font-size:40px;
+            color:black;
+            position:fixed;
+        }
+        .bar-2 i:hover{
+            color:red;
+            cursor:pointer;
+        }
+        .bar-2 ul{
+            font-size:30px;
+            color:blue;
+        }
+        .bar-2 ul{
+            left:-200%;
+            position:fixed;
+        }
+        #checkbox{
+            display:none;
+        }
+        #checkbox:checked ~ ul {
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            background-image:url(/galaxyimg/sarpng.png);
+            background-size:cover;
+            background-repeat:none;
+            background-position: center;
+            width:20%;
+            height:40%;
+            opacity: 0.6;
+        }
+        .child-1 li{
+            color:white;
+            font-size:30px;
+            list-style: none;
+        }
+
+
+
+
+
+
+
+        .child-2{ 
+            background-color:white;
+            display:grid;
+            grid-template-columns:20% 80%;
+            grid-template-rows:100% 100%;
+        }
+        .hello-1{
+            grid-row-start: 0;
+            grid-row-end:0;
+            grid-column-start: 0;
+            grid-column-end:0;
+            display:grid;
+            justify-content: center;
+        }
+        .hello-1 h1{
+            font-size:25px;
+            text-decoration: underline red;
+        }
+        .hello-2{
+            grid-row-start: 0;
+            grid-row-end:0;
+            grid-column-start: 0;
+            grid-column-end:0;
+        }
+        .hello-2 li p1{
+            color:black;
+            font-size:28px;
+        }   
+
+
+
+
+
+
+
+
+
+
+        .child-3{
+            background-color:black;
+            background-image:url(/treeimg/344618.jpg);
+            background-size:cover;
+            background-repeat:none;
+            background-position: top;
+            display:grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .child-3:hover{
+            opacity:1;
+            background-size:cover;
+            background-repeat:none;
+            background-position: top;
+            transition:all .6s;
+            animation:soligdoh 20s infinite;
+        }
+        @keyframes soligdoh{
+            0%{
+                background-image:url(/treeimg/344618.jpg);
+            }
+            50%{
+                background-image:url(/treeimg/Autumn_Trees_Trunk_tree_504408.jpg);
+            }
+            100%{
+                background-image:url(/treeimg/344618.jpg);
+            }
+        }
+        .child-3 p1{
+            font-size:40px;
+            color:white;
+            font-family: 'Satisfy', cursive;
+        }
+        .child-3 h1{
+            font-size:50px;
+            color:white;
+            text-decoration: underline red;
+        }
+        .child-3 a{
+            color:white;
+            text-decoration: none;
+            font-size:50px;
+        }
+        .child-3 .btn-1{
+            width:40%;
+            height:40%;
+            background-color:transparent;
+            font-size:30px;
+            border-radius:10%;
+            color:orangered;
+        }
+
+
+
+
+
+
+
+
+        .child-4{
+            background-image:url(/OCEAN/830984.jpg);
+            background-size:cover;
+            background-repeat:none;
+            background-position: top;
+            display:grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .child-4:hover{
+            opacity:1;
+            background-size:cover;
+            background-repeat:none;
+            background-position: top;
+            transition:all .6s;
+            animation:soligdoh1 20s infinite;
+        }
+        @keyframes soligdoh1{
+            0%{
+                background-image:url(/OCEAN/830984.jpg);
+            }
+            50%{
+                background-image:url(/OCEAN/905479.jpg);
+            }
+            100%{
+                background-image:url(/OCEAN/830984.jpg);
+            }
+        }
+        .child-4 p1{
+            font-size:40px;
+            color:white;
+            font-family: 'Satisfy', cursive;
+        }
+        .child-4 h1{
+            font-size:50px;
+            color:white;
+            text-decoration: underline red;
+        }
+        .child-4 a{
+            color:white;
+            text-decoration: none;
+            font-size:50px;
+        }
+        .child-4 .btn-1{
+            width:40%;
+            height:40%;
+            background-color:transparent;
+            font-size:30px;
+            border-radius:10%;
+            color:orangered;
+        }
+        .child-4 li{
+            list-style: none;
+        }
+
+
+
+
+
+
+        .child-5{
+            background-color:aqua;
+            background-image:url(/animalsimg/deer_grass_leaves_autumn_trees_59721_1920x1080.jpg);
+            background-size:cover;
+            background-repeat:none;
+            background-position: center;
+            display:grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .child-5:hover{
+            opacity:1;
+            background-size:cover;
+            background-repeat:none;
+            background-position: top;
+            transition:all .6s;
+            animation:soligdoh2 20s infinite;
+        }
+        @keyframes soligdoh2{
+            0%{
+                background-image:url(/animalsimg/deer_grass_leaves_autumn_trees_59721_1920x1080.jpg);
+                background-size:cover;
+                background-repeat:none;
+                background-position: center;
+            }
+            50%{
+                background-image:url(/animalsimg/horses_sunset_paddock_125690_1920x1080.jpg);
+                background-size:cover;
+                background-repeat:none;
+                background-position: center;
+            }
+            100%{
+                background-image:url(/animalsimg/deer_grass_leaves_autumn_trees_59721_1920x1080.jpg);
+                background-size:cover;
+                background-repeat:none;
+                background-position: center;
+            }
+        }
+        .child-5 p1{
+            font-size:40px;
+            color:white;
+            font-family: 'Satisfy', cursive;
+        }
+        .child-5 h1{
+            font-size:50px;
+            color:white;
+            text-decoration: underline red;
+        }
+        .child-5 a{
+            color:white;
+            text-decoration: none;
+            font-size:50px;
+        }
+        .child-5 .btn-1{
+            width:40%;
+            height:40%;
+            background-color:transparent;
+            font-size:30px;
+            border-radius:10%;
+            color:orangered;
+        }
+        .child-5 li{
+            list-style: none;
+        }
+
+
+
+
+
+
+
+        .child-6{
+            background-color:red;
+            display:grid;
+            grid-template-columns:100%;
+            grid-template-rows:20% 80%;
+        }
+        .season-1{
+            background-image: linear-gradient(180deg, black, rgb(120, 119, 119));
+            grid-row-start: 0;
+            grid-row-end:0;
+            grid-column-start: 0;
+            grid-column-end:0;
+        }
+        .season-1 h1{
+            font-size:50px;
+            color:white;
+            text-align:center;
+            animation:ursah 20s infinite;
+        }
+    @keyframes ursah{
+        0%{
+            transform:translate(100%);
+       }
+       100%{ 
+            transform:translate(-100%);
+        }
+
+        }
+
+
+
+
+
+
+        .season-2{
+            background-image: linear-gradient(180deg, rgb(120, 119,119) 20%, rgb(84,84,84) 80%);
+            grid-row-start: 0;
+            grid-row-end:0;
+            grid-column-start:0;
+            grid-column-end:0;
+            display:grid;
+            grid-template-columns: 20% 20% 20% 20%;
+            grid-template-rows: 100%;
+            justify-content: center;
+        }
+        .season-3{
+            border-end-start-radius: 20%;
+            border-start-start-radius: 20%;
+            display:grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 60% 30% 10%;
+            transition:3s;
+        }
+        .season-4{
+            display:grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 60% 30% 10%;
+            transition:3s;
+        }
+        .season-5{
+            display:grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 60% 30% 10%;
+            transition:3s;
+        }
+        .season-6{
+            border-start-end-radius: 20%;
+            border-end-end-radius: 20%;
+            display:grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 60% 30% 10%;
+            transition:3s;
+        }
+        .summerzurag{
+            background-image:url(/4seasonimg/summer1.jpg);
+            background-size:cover;
+            background-repeat:none;
+            background-position: center;
+            border-start-start-radius: 5%;
+            border-start-end-radius:5%;
+            border:3px solid silver;
+        }
+        .springzurag{
+            background-image:url(/4seasonimg/autumn1.jpg);
+            background-size:cover;
+            background-repeat:none;
+            background-position: center;
+            border-start-start-radius: 5%;
+            border-start-end-radius:5%;
+            border:3px solid silver;
+        }
+        .winterzurag{
+            background-image:url(/4seasonimg/winter1.jpg);
+            background-size:cover;
+            background-repeat:none;
+            background-position: center;
+            border-start-start-radius: 5%;
+            border-start-end-radius:5%;
+            border:3px solid silver;
+        }
+        .autumnzurag{
+            background-image:url(/4seasonimg/spring1.jpg);
+            background-size:cover;
+            background-repeat:none;
+            background-position: center;
+            border-start-start-radius: 5%;
+            border-start-end-radius:5%;
+            border:3px solid silver;
+        }
+        .summerzurag:hover{
+            transform:scale(1.3);
+            transition:all .3s;
+        }
+        .springzurag:hover{
+            transform:scale(1.3);
+            transition:all .3s;
+        }
+        .winterzurag:hover{
+            transform:scale(1.3);
+            transition:all .3s;
+        }
+        .autumnzurag:hover{
+            transform:scale(1.3);
+            transition:all .3s;
+        }
+        .ug{
+            background: linear-gradient(0.13turn, orange, yellow);
+            display:grid;
+            justify-content: center;
+            align-items: center;
+            border:3px solid silver;
+        }
+        .delgerengui{
+            background: linear-gradient(0.13turn, orange, yellow);
+            display:grid;
+            justify-content: center;
+            align-items: center;
+            border:3px solid silver;
+        }
+        .delgerengui .btn-2{
+            background-color:transparent;
+            font-size:20px;
+            border-radius:10%;
+        }
+        .delgerengui .btn-2:hover{
+            background-color:orange;
+            color:aqua;
+        }
+
+
+
+
+
+
+
+        .child-7{
+            background-image: linear-gradient(180deg, rgb(84, 84, 84), rgb(72, 71, 71));
+            display:grid;
+            grid-template-columns:50% 50% 50% 50% 50% 50% 50% 50% 50% 50%;
+            grid-template-rows:100%;
+            justify-content: center;
+            overflow:hidden;
+            
+        }
+
+    .hey{
+        width:100%;
+        background-color:red;
+        animation:slide 80s infinite;
+    }
+    .hey-1{
+        background-image:url(/dayandnight/day1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: none;
+    }
+    .hey-2{
+        background-image:url(/dayandnight/night1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: none;
+    }
+    .hey-3{
+        background-image:url(/dayandnight/day2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: none;
+    }
+    .hey-4{
+        background-image:url(/dayandnight/night2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: none;
+    }
+    .hey-5{
+        background-image:url(/dayandnight/day3.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: none;
+    }
+    .hey-6{
+        background-image:url(/dayandnight/night3.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: none;
+    }
+    .hey-7{
+        background-image:url(/dayandnight/day4.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: none;
+    }
+    .hey-8{
+        background-image:url(/dayandnight/night4.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: none;
+    }
+    .hey-9{
+        background-image:url(/dayandnight/day5.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: none;
+    }
+    .hey-10{
+        background-image:url(/dayandnight/night5.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: none;
+    }
+
+
+    @keyframes slide{
+        0%{
+            transform:translate(0%);
+       }
+       33%{
+        transform:translate(-400%);
+       }
+
+
+        66%{
+            transform:translate(400%);
+        }
+       100%{ 
+            transform:translate(0%);
+        }
+
+        }
+
+
+
+
+
+
+
+
+
+        .child-8{
+            background-color:green;
+            display:grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 60% 40%;
+        }
+        .deed{
+            background-color:blue;
+            display:grid;
+            grid-template-columns: 70% 30%;
+            grid-template-rows:100%;
+        }
+        .urd{
+            background-image:linear-gradient(180deg, rgb(72, 71, 71), rgb(0, 0, 0));
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .urd p1{
+            font-size:30px;
+            color:white;
+        }
+        .ard{
+            background-image:linear-gradient(180deg, rgb(72, 71, 71), rgb(0, 0, 0));
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .ard i{
+            font-size:30px;
+            color:white;
+        }
+        .dood{
+            background-color:black;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .dood p1{
+            font-size:20px;
+            color:white;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:800px) and (max-width:1200px){
+            .container{
+            display:grid;
+            grid-template-columns: 100%;
+            grid-template-rows:50vh 30vh 40vh 40vh 40vh 80vh 60vh 20vh;
+        }
+        .child-1{
+            background-image:url(/galaxyimg/Earth\ wallpaper\ for\ desktop\ hd\ ultra\ 4k\ \(9\).jpg);
+            background-size:cover;
+            background-repeat:none;
+            background-position: top;
+            display:grid;
+            grid-template-columns:10% 50%  10%;
+            grid-template-rows:10%;
+            justify-content: space-between;
+        }
+        @keyframes shootingstar{
+        0%{
+            transform:50deg;
+        opacity: 100%;
+        transform:translate(-10px,-5px );
+        }
+        100%{ 
+        opacity:0%;
+        transform:translate(430px,220px);
+        }
+    }
+
+
+
+        .child-1 .bar-2{
+            display:grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .bar-2 i{
+            font-size:20px;
+            color:black;
+            position:fixed;
+        }
+        .bar-2 ul{
+            color:blue;
+        }
+        .bar-2 ul{
+            left:-100%;
+            position:fixed;
+        }
+        #checkbox{
+            display:none;
+        }
+        #checkbox:checked ~ ul {
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            background-image:url(/treeimg/tree123.png);
+            background-size:cover;
+            background-repeat:none;
+            background-position: center;
+            width:20%;
+            height:50%;
+        }
+        .child-1 li{
+            color:white;
+            font-size:10px;
+            list-style: none;
+        }
+
+
+
+
+        
+        .child-2{ 
+            background-color:white;
+            display:grid;
+            grid-template-columns:10% 90%;
+            grid-template-rows:100% 100%;
+        }
+        .hello-1 h1{
+            text-decoration: underline red;
+            font-size:15px;
+        }
+        .hello-2 li p1{
+            color:black;
+            font-size:15px;
+        }
+
+
+
+
+
+        .child-3{
+            background-color:black;
+            background-image:url(/treeimg/344618.jpg);
+            background-size:cover;
+            background-repeat:none;
+            background-position: center;
+            display:grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .child-3:hover{
+            background-size:cover;
+            background-repeat:none;
+            background-position: center;
+            transition:all .6s;
+            animation:soligdoh 20s infinite;
+        }
+        .child-3 p1{
+            font-size:15px;
+            color:white;
+        }
+        .child-3 h1{
+            font-size:20px;
+            color:white;
+            text-decoration: underline red;
+        }
+        .child-3 a{
+            color:white;
+            text-decoration: none;
+            font-size:20px;
+        }
+        .child-3 .btn-1{
+            width:40%;
+            height:40%;
+            background-color:transparent;
+            font-size:10px;
+            border-radius:10%;
+            color:orangered;
+        }
+
+
+
+
+
+        .child-4 p1{
+            font-size:15px;
+            color:white;
+        }
+        .child-4 h1{
+            font-size:20px;
+            color:white;
+            text-decoration: underline red;
+        }
+        .child-4 a{
+            color:white;
+            text-decoration: none;
+            font-size:20px;
+        }
+        .child-4 .btn-1{
+            width:40%;
+            height:40%;
+            background-color:transparent;
+            font-size:10px;
+            border-radius:10%;
+            color:orangered;
+        }
+
+
+
+
+
+
+        .child-5 p1{
+            font-size:15px;
+            color:white;
+        }
+        .child-5 h1{
+            font-size:20px;
+            color:white;
+            text-decoration: underline red;
+        }
+        .child-5 a{
+            color:white;
+            text-decoration: none;
+            font-size:20px;
+        }
+        .child-5 .btn-1{
+            width:40%;
+            height:40%;
+            background-color:transparent;
+            font-size:10px;
+            border-radius:10%;
+            color:orangered;
+        }
+
+
+
+        .child-6{
+            background-color:red;
+            display:grid;
+            grid-template-columns:100%;
+            grid-template-rows:10% 90%;
+        }
+        .season-1 h1{
+            font-size:30px;
+            color:white;
+            text-align:center;
+            animation:ursah 20s infinite;
+        }
+
+
+
+
+
+        
+        .season-2{
+            background-image: linear-gradient(180deg, rgb(120, 119,119) 20%, rgb(0, 0, 0) 80%);
+            grid-row-start: 0;
+            grid-row-end:0;
+            grid-column-start:0;
+            grid-column-end:0;
+            display:grid;
+            grid-template-columns: 24% 24% 24% 24%;
+            grid-template-rows: 80%;
+            justify-content: center;
+        }
+        .ug h2{
+            font-size:20px;
+        }
+        .ug p1{
+            font-size:15px;
+        }
+        .delgerengui{
+            background: linear-gradient(0.13turn, orange, yellow);
+            display:grid;
+            justify-content: center;
+            align-items: center;
+            border:3px solid silver;
+        }
+        .delgerengui .btn-2{
+            background-color:transparent;
+            font-size:15px;
+            border-radius:10%;
+        }
+
+
+
+
+
+        .child-8{
+            background-color:green;
+            display:grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 60% 40%;
+        }
+        .deed{
+            background-color:blue;
+            display:grid;
+            grid-template-columns: 80% 20%;
+            grid-template-rows:100%;
+        }
+
+        .urd p1{
+            font-size:15px;
+            color:white;
+        }
+
+        .ard i{
+            font-size:25px;
+            color:white;
+        }
+        .dood p1{
+            font-size:20px;
+            color:white;
+        }
+
+    }
+ @media screen and (min-width:600px) and (max-width:799px){
+            .container{
+            display:grid;
+            grid-template-columns: 100%;
+            grid-template-rows:40vh 20vh 30vh 30vh 30vh 50vh 50vh 20vh;
+        }
+        .child-1{
+            background-image:url(/galaxyimg/Earth\ wallpaper\ for\ desktop\ hd\ ultra\ 4k\ \(9\).jpg);
+            background-size:cover;
+            background-repeat:none;
+            background-position: top;
+            display:grid;
+            grid-template-columns:10% 50%  10%;
+            grid-template-rows:10%;
+            justify-content: space-between;
+        }
+        @keyframes shootingstar{
+        0%{
+            transform:50deg;
+        opacity: 100%;
+        transform:translate(-10px,-5px );
+        }
+        100%{ 
+        opacity:0%;
+        transform:translate(430px,220px);
+        }
+    }
+
+
+
+        .child-1 .bar-2{
+            display:grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .bar-2 i{
+            font-size:20px;
+            color:black;
+            position:fixed;
+        }
+        .bar-2 ul{
+            color:blue;
+        }
+        .bar-2 ul{
+            left:-100%;
+            position:fixed;
+        }
+        #checkbox{
+            display:none;
+        }
+        #checkbox:checked ~ ul {
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            background-image:url(/galaxyimg/sarniipng.png);
+            background-size:cover;
+            background-repeat:none;
+            background-position: center;
+            width:20%;
+            height:20%;
+        }
+        .child-1 li{
+            color:white;
+            font-size:10px;
+            list-style: none;
+        }
+
+
+
+
+        
+        .child-2{ 
+            background-color:white;
+            display:grid;
+            grid-template-columns:10% 90%;
+            grid-template-rows:100% 100%;
+        }
+        .hello-1 h1{
+            text-decoration: underline red;
+            font-size:15px;
+        }
+        .hello-2 li p1{
+            color:black;
+            font-size:9px;
+        }
+
+
+
+
+
+        .child-3{
+            background-color:black;
+            background-image:url(/treeimg/344618.jpg);
+            background-size:cover;
+            background-repeat:none;
+            background-position: center;
+            display:grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .child-3:hover{
+            background-size:cover;
+            background-repeat:none;
+            background-position: center;
+            transition:all .6s;
+            animation:soligdoh 20s infinite;
+        }
+        .child-3 p1{
+            font-size:15px;
+            color:white;
+        }
+        .child-3 h1{
+            font-size:20px;
+            color:white;
+            text-decoration: underline red;
+        }
+        .child-3 a{
+            color:white;
+            text-decoration: none;
+            font-size:20px;
+        }
+        .child-3 .btn-1{
+            width:40%;
+            height:40%;
+            background-color:transparent;
+            font-size:10px;
+            border-radius:10%;
+            color:orangered;
+        }
+
+
+
+
+
+        .child-4 p1{
+            font-size:15px;
+            color:white;
+        }
+        .child-4 h1{
+            font-size:20px;
+            color:white;
+            text-decoration: underline red;
+        }
+        .child-4 a{
+            color:white;
+            text-decoration: none;
+            font-size:20px;
+        }
+        .child-4 .btn-1{
+            width:40%;
+            height:40%;
+            background-color:transparent;
+            font-size:10px;
+            border-radius:10%;
+            color:orangered;
+        }
+
+
+
+
+
+
+        .child-5 p1{
+            font-size:15px;
+            color:white;
+        }
+        .child-5 h1{
+            font-size:20px;
+            color:white;
+            text-decoration: underline red;
+        }
+        .child-5 a{
+            color:white;
+            text-decoration: none;
+            font-size:20px;
+        }
+        .child-5 .btn-1{
+            width:40%;
+            height:40%;
+            background-color:transparent;
+            font-size:10px;
+            border-radius:10%;
+            color:orangered;
+        }
+
+
+
+        .child-6{
+            background-color:red;
+            display:grid;
+            grid-template-columns:100%;
+            grid-template-rows:10% 90%;
+        }
+        .season-1 h1{
+            font-size:15px;
+            color:white;
+            text-align:center;
+            animation:ursah 20s infinite;
+        }
+
+
+
+
+
+        
+        .season-2{
+            background-image: linear-gradient(180deg, rgb(120, 119,119) 20%, rgb(0, 0, 0) 80%);
+            grid-row-start: 0;
+            grid-row-end:0;
+            grid-column-start:0;
+            grid-column-end:0;
+            display:grid;
+            grid-template-columns: 24% 24% 24% 24%;
+            grid-template-rows: 100%;
+            justify-content: center;
+        }
+        .ug h2{
+            font-size:15px;
+        }
+        .ug p1{
+            font-size:10px;
+        } 
+        .delgerengui .btn-2{
+            background-color:transparent;
+            font-size:15px;
+            border-radius:10%;
+        }
+
+
+        .child-8{
+            background-color:green;
+            display:grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 60% 40%;
+        }
+        .deed{
+            background-color:blue;
+            display:grid;
+            grid-template-columns: 70% 30%;
+            grid-template-rows:100%;
+        }
+
+        .urd p1{
+            font-size:15px;
+            color:white;
+        }
+
+        .ard i{
+            font-size:25px;
+            color:white;
+        }
+        .dood p1{
+            font-size:20px;
+            color:white;
+        }
+
+
+
+                
+    }
+
+@media screen and (min-width:200px) and (max-width:599px){
+            .container{
+            display:grid;
+            grid-template-columns: 100%;
+            grid-template-rows:30vh 26vh 25vh 25vh 25vh 40vh 30vh 10vh;
+        }
+        .child-1{
+            background-image:url(/galaxyimg/Earth\ wallpaper\ for\ desktop\ hd\ ultra\ 4k\ \(9\).jpg);
+            background-size:cover;
+            background-repeat:none;
+            background-position: top;
+            display:grid;
+            grid-template-columns:10% 50%  10%;
+            grid-template-rows:10%;
+            justify-content: space-between;
+        }
+        @keyframes shootingstar{
+        0%{
+            transform:50deg;
+        opacity: 100%;
+        transform:translate(-10px,-5px );
+        }
+        100%{ 
+        opacity:0%;
+        transform:translate(130px,120px);
+        }
+    }
+
+
+
+        .child-1 .bar-2{
+            display:grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .bar-2 i{
+            font-size:10px;
+            color:black;
+            position:fixed;
+        }
+        .bar-2 ul{
+            color:blue;
+        }
+        .bar-2 ul{
+            left:-100%;
+            position:fixed;
+        }
+        #checkbox{
+            display:none;
+        }
+        #checkbox:checked ~ ul {
+            top:0;
+            left:0;
+            bottom:0;
+            right:0;
+            background-image:url(/galaxyimg/sarniipng.png);
+            background-size:cover;
+            background-repeat:none;
+            background-position: right;
+            width:15%;
+            height:10%;
+        }
+        .child-1 li{
+            color:white;
+            font-size:5px;
+            list-style: none;
+        }
+
+
+
+
+        
+        .child-2{ 
+            background-color:white;
+            display:grid;
+            grid-template-columns:10% 90%;
+            grid-template-rows:100% 100%;
+        }
+        .hello-1 h1{
+            text-decoration: underline red;
+            font-size:4px;
+        }
+        .hello-2 li p1{
+            color:black;
+            font-size:6px;
+        }
+
+
+
+
+
+        .child-3{
+            background-color:black;
+            background-image:url(/treeimg/344618.jpg);
+            background-size:cover;
+            background-repeat:none;
+            background-position: center;
+            display:grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .child-3:hover{
+            background-size:cover;
+            background-repeat:none;
+            background-position: center;
+            transition:all .4s;
+            animation:soligdoh 20s infinite;
+        }
+        .child-3 p1{
+            font-size:10px;
+            color:white;
+        }
+        .child-3 h1{
+            font-size:15px;
+            color:white;
+            text-decoration: underline red;
+        }
+        .child-3 a{
+            color:white;
+            text-decoration: none;
+            font-size:15px;
+        }
+        .child-3 .btn-1{
+            width:40%;
+            height:40%;
+            background-color:transparent;
+            font-size:8px;
+            border-radius:10%;
+            color:orangered;
+        }
+
+
+
+
+
+        .child-4 p1{
+            font-size:10px;
+            color:white;
+        }
+        .child-4 h1{
+            font-size:15px;
+            color:white;
+            text-decoration: underline red;
+        }
+        .child-4 a{
+            color:white;
+            text-decoration: none;
+            font-size:15px;
+        }
+        .child-4 .btn-1{
+            width:40%;
+            height:40%;
+            background-color:transparent;
+            font-size:8px;
+            border-radius:10%;
+            color:orangered;
+        }
+
+
+
+
+
+
+        .child-5 p1{
+            font-size:10px;
+            color:white;
+        }
+        .child-5 h1{
+            font-size:15px;
+            color:white;
+            text-decoration: underline red;
+        }
+        .child-5 a{
+            color:white;
+            text-decoration: none;
+            font-size:15px;
+        }
+        .child-5 .btn-1{
+            width:40%;
+            height:40%;
+            background-color:transparent;
+            font-size:8px;
+            border-radius:10%;
+            color:orangered;
+        }
+
+
+
+        .child-6{
+            background-color:red;
+            display:grid;
+            grid-template-columns:100%;
+            grid-template-rows:10% 90%;
+        }
+        .season-1 h1{
+            font-size:10px;
+            color:white;
+            text-align:center;
+            animation:ursah 20s infinite;
+        }
+
+
+
+
+
+        
+        .season-2{
+            background-image: linear-gradient(180deg, rgb(120, 119,119) 20%, rgb(0, 0, 0) 80%);
+            grid-row-start: 0;
+            grid-row-end:0;
+            grid-column-start:0;
+            grid-column-end:0;
+            display:grid;
+            grid-template-columns: 24% 24% 24% 24%;
+            grid-template-rows: 80%;
+            justify-content: center;
+        }
+        .ug h2{
+            font-size:10px;
+        }
+        .ug p1{
+            font-size:8px;
+        } 
+        .delgerengui .btn-2{
+            background-color:transparent;
+            font-size:10px;
+            border-radius:10%;
+        }
+
+
+        .child-8{
+            background-color:green;
+            display:grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 60% 40%;
+        }
+        .deed{
+            background-color:blue;
+            display:grid;
+            grid-template-columns: 70% 30%;
+            grid-template-rows:100%;
+        }
+
+        .urd p1{
+            font-size:10px;
+            color:white;
+        }
+
+        .ard i{
+            font-size:15px;
+            color:white;
+        }
+        .dood p1{
+            font-size:15px;
+            color:white;
+        }
+
+
+
+                
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child child-1">
+            <div class="bar bar-1">
+                <img src="galaxyimg/shootingstar.png.png"/>;
+            </div>
+            <div class="dundah">
+            </div>
+            <div class="bar bar-2">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">
+                    <i class="fas fa-bars"></i>
+                    </label>
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+        <div class="child child-2">
+            <div class="hello hello-1">
+                <h1 align="center"style="color:black; text - transform: uppercase;">ABOUT</h1>
+            </div>
+            <div class="hello hello-2">
+                <li><p1>“The Earth is what we all have in common.”
+                    —Wendell Berry</p1></li>
+                <li><p1>“Progress is impossible without change, and those who cannot change their minds cannot change anything.”
+                    -George Bernard Shaw</p1></li>
+                <li><p1>“Time spent among trees is never time wasted.”
+                    —Anonymous</p1></li>
+                <li><p1>“Away, away, from men and towns,
+                    To the wild wood and the downs, —
+                    To the silent wilderness,
+                    Where the soul need not repress its music.”
+                    —Percy Bysshe Shelley</p1></li>
+                <li><p1>“He that plants trees loves others besides himself.”
+                    —Thomas Fuller</p1></li>
+                <li><p1>“Never doubt that a small group of thoughtful, committed citizens can change the world; indeed, it is the only thing that ever has.”
+                    —Margaret Mead</p1></li>
+            </div>
+            
+        </div>
+        <div class="child child-3">
+            <li><h1 align="center"style="color:white; text - transform: uppercase;">TREE</h1></li>
+            <li><a href="">PLANTS ARE SGFE</a></li>
+            <li><p1>“The clearest way into <br>the Universe is through a <br>forest wilderness.”
+                ― John Muir</p1></li>
+            <button class="btn-1">EXPLORE</button>
+        </div>
+        <div class="child child-4">
+            <li><h1 align="center"style="color:white; text - transform: uppercase;">OCEAN</h1></li>
+            <li><a href="">OCEAN BLA BLA BLA</a></li>
+            <li><p1>“The clearest way into <br>the Universe is through a <br>forest wilderness.”
+                ― John Muir</p1></li>
+            <button class="btn-1">EXPLORE</button>
+        </div>
+        <div class="child child-5">
+            <li><h1 align="center"style="color:white; text - transform: uppercase;">ANIMAL</h1></li>
+            <li><a href="">ANIMAL BLA BLA BLA</a></li>
+            <li><p1>“The clearest way into <br>the Universe is through a <br>forest wilderness.”
+                ― John Muir</p1></li>
+            <button class="btn-1">EXPLORE</button>
+        </div>
+        <div class="child child-6">
+            <div class="aboutseason season-1">
+                <h1>There are four seasons in a year: Winter, Spring, Summer and Colour!.</h1>
+            </div>
+            <div class="aboutseason season-2">
+                <div class="season-3">
+                    <div class="summerzurag"></div>
+                    <div class="ug">
+                        <h2>Summer</h2>
+                       <p1>"n summer, the song sings itself."</p1>
+                    </div>
+                    <div class="delgerengui">
+                        <button class="btn-2">Дэлгэрэнгүй</button>
+                    </div>
+                </div>
+                <div class="season-4">
+                    <div class="springzurag">
+                    </div>
+                    <div class="ug">
+                        <h2>Spring</h2>
+                        <p1>"Blossom by blossom the spring begins."</p1>
+                    </div>
+                    <div class="delgerengui">
+                        <button class="btn-2">Дэлгэрэнгүй</button>
+                    </div>
+                </div>
+                <div class="season-5">
+                    <div class="winterzurag">
+                    </div>
+                    <div class="ug">
+                        <h2>Winter</h2>
+                        <p1>"Winter is a season of recovery and preparation."</p1>
+                    </div>
+                    <div class="delgerengui">
+                        <button class="btn-2">Дэлгэрэнгүй</button>
+                    </div>
+                </div>
+                <div class="season-6">
+                    <div class="autumnzurag"></div>
+                    <div class="ug">
+                        <h2>Autumn</h2>
+                        <p1>"And all at once, summer collapsed into fall."</p1>
+                    </div>
+                    <div class="delgerengui">
+                        <button class="btn-2">Дэлгэрэнгүй</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="child child-7">
+            <div class="hey hey-1">
+               
+            </div>
+            <div class="hey hey-2">
+               
+            </div>
+            <div class="hey hey-3">
+               
+            </div>
+            <div class="hey hey-4">
+               
+            </div>
+            <div class="hey hey-5">
+               
+            </div>
+            <div class="hey hey-6">
+               
+            </div>
+            <div class="hey hey-7">
+               
+            </div>
+            <div class="hey hey-8">
+               
+            </div>
+            <div class="hey hey-9">
+               
+            </div>
+            <div class="hey hey-10">
+               
+            </div>
+
+        </div>
+        <div class="child child-8">
+            <div class="deed">
+                <div class="urd">
+                    <p1>Home</p1>
+                    <p1>About</p1>
+                    <p1>Work</p1>
+                    <p1>News</p1>
+                    <p1>Careers</p1>
+                    <p1>Contact</p1>
+                </div>
+                <div class="ard">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fas fa-film"></i>
+                </div>
+            </div>
+            <div class="dood">
+                <p1>Мөнхсайхан Баатар 2022/01/29</p1>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
